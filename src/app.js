@@ -119,7 +119,7 @@ app.get("/api/cart", async (req, res) => {
     const total = items.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
 
     res.json({ items, total });
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: "Error obteniendo carrito" });
   }
 });
@@ -130,7 +130,7 @@ app.delete("/api/cart/:id", async (req, res) => {
   try {
     await prisma.cart.delete({ where: { id } });
     res.json({ success: true });
-  } catch (error) {
+  } catch (_error) {
     res.status(500).json({ error: "Error eliminando del carrito" });
   }
 });
