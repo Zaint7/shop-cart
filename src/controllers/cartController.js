@@ -1,6 +1,5 @@
-const { PrismaClient } = require('../generated/prisma');
+const prisma = require('../database/prismaClient');
 
-const prisma = new PrismaClient();
 
 exports.getCart = async (req, res) => {
 
