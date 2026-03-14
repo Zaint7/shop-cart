@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>TechMercancy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>TechMercancy</h1>
+  <span>Tech Store</span>
+</header>
+
+<div class="container">
+
+  <div class="products">
+    <div class="section-header">
+      <h2>Productos</h2>
+      <button class="btn btn-primary" onclick="loadProducts()">Cargar productos</button>
+    </div>
+    <ul id="products"><p class="empty">Haz clic en "Cargar productos"</p></ul>
+  </div>
+
+  <div class="cart">
+    <h2>🛒 Carrito</h2>
+    <ul id="cart"><p class="empty">Tu carrito está vacío</p></ul>
+    <div class="total-section">
+      <div class="total-row">
+        <span class="total-label">Total</span>
+        <span id="total">$0.00</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
