@@ -267,4 +267,4 @@ El pipeline establece los siguientes ciclos de retroalimentación automática:
 ---
 
 *Reporte generado para la actividad de CI/CD — Ingeniería de Software*
-<!-- trigger pipeline 3 -->
+<!-- trigger pipeline 4 -->
